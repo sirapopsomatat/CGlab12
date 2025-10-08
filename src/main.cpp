@@ -19,6 +19,8 @@
 #include "Libs/Mesh.h"
 
 #include "Libs/stb_image.h"
+#define STB_IMAGE_IMPLEMENTATION
+#include "Libs/stb_image.h"
 
 const GLint WIDTH = 800, HEIGHT = 600;
 
