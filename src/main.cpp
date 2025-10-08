@@ -18,9 +18,10 @@
 #include "Libs/Window.h"
 #include "Libs/Mesh.h"
 
-#include "Libs/stb_image.h"
+// แก้ไขตรงนี้: define ก่อน include และ include แค่ครั้งเดียว
 #define STB_IMAGE_IMPLEMENTATION
 #include "Libs/stb_image.h"
+// ...existing code....
 
 const GLint WIDTH = 800, HEIGHT = 600;
 
@@ -45,7 +46,7 @@ void CreateTriangle()
 {
     GLfloat vertices[] =
         {
-            // x    ,y  ,z          u,     ,v(Texture coordinates)
+            // x    ,y    ,z     u,   ,v(Texture coordinates)
             -1.0f, -1.0f, 0.0f, 0.0f, 0.0f,
             0.0f, -1.0f, 1.0f, 0.5f, 0.0f,
             1.0f, -1.0f, 0.0f, 1.0f, 0.0f,
